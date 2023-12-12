@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("/home/wills./Documents/GitHub/theneolandersfork.github.io/assets/Fonts/Rubik-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "RubikBold";
+    src: url("/home/wills./Documents/GitHub/theneolandersfork.github.io/assets/Fonts/Rubik-VariableFont_wght.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: "Rubik";
+    background-color: rgb(70,80,210);
+}
+.bold {
+    font-family: "RubikBold";
+}
+
+.square {
+    height:75px;
+    width: 200px;
+    background-color: rgb(255,255,0);
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px rgb(230,230,50);
+
+}
+
+.square:hover {
+    animation: expand 1.5s normal, highlight 1.5s normal;
+    height:200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes expand {
+    0% {height: 75px;}
+    20% {height: 60px;}
+    80% {height: 205px;}
+    90% {height: 200px;}
+}
+@keyframes highlight {
+    0% {box-shadow: 0px 0px White;}
+    50% {box-shadow: 0px 10px White;}
+    100% {box-shadow: 0px 0px White;}
+
+}
+
